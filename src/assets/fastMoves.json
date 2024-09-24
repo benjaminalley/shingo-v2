@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Lock On",
+    "type": "Normal",
+    "energyDelta": 5,
+    "damage": 1,
+    "duration": 1
+  },
+  {
+    "id": 2,
+    "name": "Water Shuriken",
+    "type": "Water",
+    "energyDelta": 14,
+    "damage": 6,
+    "duration": 3
+  },
+  {
+    "id": 3,
+    "name": "Karate Chop",
+    "type": "Fighting",
+    "energyDelta": 9,
+    "damage": 5,
+    "duration": 2
+  }
+]
