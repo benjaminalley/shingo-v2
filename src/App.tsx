@@ -1,14 +1,20 @@
-import React from 'react'; // Import React to use JSX
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import FastMovesTable from "./components/FastMovesTable";
+import { Route, Routes } from 'react-router-dom';
+import Home from "./components/pages/Home";
+import FastMoves from "./components/pages/FastMoves";
+import ChargeMoves from "./components/pages/ChargeMoves";
+import Navbar from "./components/pages/NavBar";
 
-const App: React.FC = () => { // Type annotation using React.FC (Functional Component)
+const App: React.FC = () => {
   return (
       <div className="App">
-        <header className="App-header">
-          <FastMovesTable />
-        </header>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/fast-moves" element={<FastMoves />} />
+          <Route path="/charge-moves" element={<ChargeMoves />} />
+        </Routes>
       </div>
   );
 }

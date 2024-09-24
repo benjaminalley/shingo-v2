@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
 
 // Ensure the root element exists and is of the correct type (HTMLDivElement in this case)
 const rootElement = document.getElementById('root') as HTMLElement;
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
     <React.StrictMode>
+      <BrowserRouter>
         <App />
+      </BrowserRouter>
     </React.StrictMode>
 );
 
